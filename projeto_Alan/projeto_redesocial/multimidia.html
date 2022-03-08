@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<!-- A inclusão de arquivo multimidia no site consome recursos de hospedagem -->
+<html lang="pt-br">
+<head><!-- funções comportamentais/cabecalho -->
+	<meta charset="UTF-8"/><!-- formatação do texto -->
+	<title>Tudo sobre Google Glass</title><!-- titulo -->
+	<!-- formatando todos os paragrafos de maneira global -->
+	<link rel="stylesheet"  href="_css/estilo.css"/><!-- gerando uma ligação entre o arquivo html e o css e usando href pra chmar um arquivo de fora -->
+	<link rel="stylesheet" href="_css/media.css"/>
+</head>
+<!-- aplicando javascript -->
+<script language="javascript" src="_javascript/funcoes.js"></script>
+<body>
+	<div id="interface"><!-- dividindo a pagina  e usando id para identificar a pagina -->
+
+	<header id="cabecalho"><!-- area do cabecalho do site -->
+	<hgroup><!-- agrupando um titulos semelhantes -->
+	<h1>Google Glass</h1>
+	<h2>A revolução do Google está chegando</h2>
+	</hgroup><!-- grupo de titulos -->
+	
+	<img id="icone" src="_imagens/multimidia.png"/><!-- src é o parametro ou origem tag img= para inserir imagem-->
+	<nav id="menu"><!-- Criando area de navagação no site -->
+		<h1>Menu Principal</h1><!-- Titulo -->
+		<ul type= "disc"><!-- Lista não ordenada ou com demarcadores/ passando parametro em java script com "overmouseover" p/ quando passar o mouse por cima mudar a foto e onmouseout p/ quando tirar o mouse voltar a foto inicial -->
+			 <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html">Home</a></li><!-- criando links para os menus -->
+			 <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="specs.html">Especificações</a></li>
+			 <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fotos.html">Fotos</a></li>
+			 <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+			 <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+		</ul>
+	</nav><!-- Menu de navagação -->
+	</header>
+	<section id="corpo-full">
+		<article id="noticia-principal">
+			<header id="cabecalho-artigo">
+				<hgroup>
+					<h3>Glass > Multimídia</h3>
+					<h1>Sons e Vídeos</h1>
+					<h2>por Daniel Jose Rodrigues da Silva</h2>
+					<h3>Atualizado em 09/07/2020</h3>
+				</hgroup>
+			</header>
+			
+<!-- Inserindo arquivos de multimidia/ source=origem -->
+		<div id="tv-radio">
+			<audio id="musica" controls="controls">
+				<source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/>
+				<source src="2009-lovers-carvings-bibio.m4a" type="audio/x-aac"/>
+				<source src="2009-lovers-carvings-bibio.ogg" type="audio/ogg"/>
+				Desculpe, mas não foi possivel carregar o audio.
+			</audio>
+			<video id="filme" controls="controls" poster="_imagens/video-mini03.jpg">
+				<source src="_media/getting-started.mp4" type="video/mp4"/>
+				<source src="_media/getting-started.webm" type="video/webm"/>
+				<source src="_media/getting-started.ogv" type="video/ogg"/>
+				Desculpe, mas não foi possivel carregar o video.
+			</video>
+		</div>
+		</article>
+	</section>
+	
+	<footer id="rodape"><!-- Dividindo a sessao de baixo -->
+		<p>Copyright &copy; 2020 - by Daniel Jose Rodrigues da Silva<br>
+		<a href="https://www.facebook.com/danielanderlinerodr/" target="_blank">Facebook</a> | <a href="https://instagram.com/daniel46_rodrigues?r=nametag" target="_blank">Instagram</a></p>
+	</footer>
+</div><!-- carregando video do youtube -->
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/_aU92zU0gpc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

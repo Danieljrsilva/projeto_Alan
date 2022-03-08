@@ -1,0 +1,50 @@
+﻿.PrintViewImage
+{
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	cursor: hand;
+	padding:none;	
+	margin:none;
+}
+
+.PrintViewLabel
+{
+	color: #0000FF;
+	font-size: 10px;
+	font-family:Verdana;
+	text-decoration: underline;	
+	cursor: pointer;
+	cursor: hand;
+	border:none;
+	background-color:transparent;	
+	padding:none;	
+	margin:none;
+	background:none;
+}
+
+.tdContainer
+{
+	width:100%;
+	height:100%;
+	border-left: solid 1px #CED7EC;
+	border-bottom: solid 1px #CED7EC;
+	border-right: solid 1px #CED7EC;
+}
+
+.ToolbarControls
+{
+	width:100%;
+}
+
+.ToolbarControls TD
+{
+	padding-right: 6px;
+	text-align:center;
+}
+
+.TablePanel
+{
+	width:99%;
+	margin:3px;
+}

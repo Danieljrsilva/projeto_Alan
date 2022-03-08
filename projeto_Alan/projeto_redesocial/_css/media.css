@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* colocando e estilizando imagens */
+div#tv-radio{
+	width: 900px;
+	height: 580px;
+	margin: auto;
+	background: url("../_imagens/radio-tv.png") no-repeat;
+}
+/* colocando e estilizando o audio */
+audio#musica{
+	display: block;
+	position: relative;
+	left: 575px;
+	top: 500px;
+	width: 300px;
+}
+/* colocando e estilizando o video */
+video#filme{
+	display: block;
+	position: relative;
+	left: 90px;
+	top: 85px;
+	width: 440px;
+}
+
+/* exemplo */

@@ -1,0 +1,18 @@
+﻿.ToolButtonLabel
+{
+	color: #0000FF;
+	font-size: 10px;
+	font-family:Verdana;
+	text-decoration: none;		
+	border:none;
+	background-color:transparent;	
+	padding:none;	
+	margin:none;
+	background:none;	
+}
+
+.ToolButtonImage
+{	
+	padding:none;	
+	margin:none;
+}

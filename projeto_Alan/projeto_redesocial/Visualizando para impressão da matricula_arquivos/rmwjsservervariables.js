@@ -1,0 +1,1 @@
+var ApplicationPath='/Corpore.Net';

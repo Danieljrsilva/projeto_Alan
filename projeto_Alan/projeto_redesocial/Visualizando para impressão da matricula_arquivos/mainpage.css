@@ -1,0 +1,41 @@
+TD.MainPageExpanderCell
+{
+}
+
+TD.MainPageExpanderCell img
+{
+}
+
+.TitleMainCell
+{
+	padding-left:10px;
+	color:#585858;
+	font-weight:bolder;
+	font-size:10pt;
+	background-position:top left;
+}
+
+.TitleExpanderCell
+{
+	padding-right:8px;
+	background-position:top right;
+}
+
+.tdColapseHint
+{
+	border-right:solid 1px #CDD6EB;
+	border-bottom:solid 1px #CDD6EB;
+	height:100%;
+}
+html, body, form
+{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+.AjaxTreeViewIdentationCell
+{
+  /* min-width:36px !important; */
+  white-space:nowrap;
+}

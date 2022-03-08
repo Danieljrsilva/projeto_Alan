@@ -1,0 +1,164 @@
+TD.tb_UserTD
+{
+	height:100%;
+	width:100%;
+  vertical-align: bottom;
+  white-space:nowrap;
+}
+
+SPAN.tb_UserSpan
+{
+  color: #ffffff;
+	font-family:Verdana;
+  font-size: 11;
+  padding-left: 5px;
+}
+
+TD.tb_RightTD
+{
+	height:100%;
+  text-align:right;
+  vertical-align: bottom;
+  white-space:nowrap;
+  padding-right: 10px;
+}
+
+TD.tb_MenuTD
+{
+	height:100%;
+	vertical-align:middle;
+	border-left-width: 1px;
+	border-left-style:outset;
+	border-left-color:#FFFFFF;
+}
+
+SPAN.tb_TopMenu
+{
+	color:white;
+	font-size:11;
+	font-family:Verdana;
+	padding-left:10PX;
+	cursor:hand;
+}
+
+SPAN.tb_TopMenuOver
+{
+	color:white;
+	font-size:11;
+	font-family:Verdana;
+	font-weight:bold;
+	padding-left:10PX;
+	cursor:hand;
+}
+
+.ToolBarImageOption
+{
+	cursor:hand;
+	cursor:pointer;
+	vertical-align:bottom;
+}
+
+.ToolBarOption
+{
+	border:none 0px;
+	font-family:Arial;
+	font-size:11;
+	color:#FFFFFF;
+	cursor:hand;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+SPAN.ToolBarOption
+{
+	left:4px;
+	top:5px;
+	padding-right: 8px;
+}
+
+input.ToolBarOption
+{
+	background-color:transparent ;
+	padding-top:4px
+}
+
+TABLE.tb_Annex
+{
+	width: 100%;
+	height: 100%;
+}
+
+TABLE.tb_Annex TD
+{
+	height:100%;
+	vertical-align: middle;
+	border:0px;
+}
+
+DIV.ToolbarLeft
+{
+  float:left;
+}
+
+DIV.ToolbarRight
+{
+  float:right;
+  padding-top:2px;
+}
+
+DIV.AddressBarItemText, DIV.AddressBarItemTextExpanded
+{
+  font-family: Verdana;
+  font-size: 11px;
+  color: #01117E;
+  cursor:pointer;
+  cursor:hand;
+  white-space:nowrap;
+}
+
+DIV.AddressBarItemText
+{
+  padding: 3px;
+  border-right: none;
+  background-color: Transparent;
+}
+
+DIV.AddressBarItemTextExpanded
+{
+  padding: 2px;
+  border:solid 1px #225280;
+  border-right: none;
+  background-color: white;
+}
+
+TD.AddressBarItemImage, TD.AddressBarItemImageExtended
+{
+  padding: 2px;
+  padding-left: 0px;
+  cursor:pointer;
+  cursor:hand;
+}
+
+TD.AddressBarItemImage
+{
+  padding: 1px;
+  border-left: none;
+  background-color: Transparent;
+}
+
+TD.AddressBarItemImageExtended
+{
+  border:solid 1px #225280;
+  border-left: none;
+  background-color: white;
+}
+
+TD.AddressBarItemSelectedText
+{
+  white-space:nowrap;
+  padding: 3px;
+  font-family: Verdana;
+  font-size: 11px;
+  font-weight: bold;
+  color: #01117E;
+}

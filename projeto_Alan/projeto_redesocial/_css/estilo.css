@@ -1,0 +1,260 @@
+@charset "UTF-8";/* formatação do texto */
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+@font-face{/* Mudando a letra do titulo */
+	font-family:'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+	body{
+		font-family: Arial, sans-serif;/* deixando a letra de todo site sem serifa */
+		background-color: #dddddd;/* coloando a cor cinza no site */
+			color: rgba(0,0,0,1);
+	}
+	
+	div#interface {
+		width: 900px; /* delimitando a largura menos o menu que esta em posição absoluta */
+		background-color: #ffffff;/* adicionando fundo branco */
+		margin: -20px auto 0px auto;/* mexendo na margem do site */
+		box-shadow: 0px 0px 10px rgba(0,0,0,.5);/* criando uma sombra em volta do objeto */
+		padding: 10px;/* configurando espaço interno do objeto */
+	}
+	
+	p{/* classe generica */
+		text-align: justify;/* texto justificado */
+		text-indent: 50px;/*-- identação do paragrafo */
+	}
+	
+	a {/* aplicando estilo nos links */
+		color: #606060;
+		text-decoration: none;
+	}
+	
+	a:hover {/* aplicando estilo p/ mudar de cor quando passar o mouse por cima */
+		text-decoration: underline;
+	}
+	
+	/* colocando a img do oculos no lugar certo */
+	header#cabecalho img#icone {
+		position: absolute;
+		left: 780px;
+		top: 70px;
+	}
+	/* organizando cabecalho */
+	header#cabecalho{
+		border-bottom: 1px #606060 solid;/* colocando uma linha */
+		height: 150px;
+		background: url("../_imagens/glass-logo-peq.jpg ") no-repeat 0px 80px;/* adicionando imagem de fundo */
+	}
+	/* configurando titulo e subtitulo */
+	header#cabecalho h1 {
+		font-family: 'FonteLogo', sans-serif;
+		font-size:  30pt;
+		color: #606060;
+		text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+		padding: 0px;
+		margin-bottom: 0px;
+	}
+	
+	header#cabecalho h2 {
+		font-family: 'Titillium Web', sans-serif;
+		color: #888888;
+		font-size: 15pt;
+		padding: 0px;
+		margin-top: 0px;
+	}
+	
+	/* Formatação de imagens com legendass */
+	figure.foto-legenda {
+		position: relative;/* ajustando a posição da legenda */
+		border: 8px solid white;/* criando uma borda */
+		box-shadow: 1px 1px 4px black;/* criando uma sombra */
+	}
+	
+	figure.foto-legenda img{
+		width: 100%;/* largura */
+		heidht: 100%;/* altura */
+	}
+	
+	figure.foto-legenda figcaption{
+		opacity: 0;/* escondendo o texto temporariamente  */
+		position: absolute;/* ajustando a posição */
+		top: 0px;
+		background-color: rgba(0,0,0,.4);/* criando uma camada tranparente na legenda */
+		color: white;/* cor da letra na legenda */
+		width: 100%;/* largura p/ ocupar 100% da legenda */
+		height: 100%;/* altura p/ ocupar 100% da legenda da foto*/
+		padding: 10px;/* criando um espaço dentro da legenda */
+		box-sizing: border-box;/* ajustando e criando um box dentro da borda */
+		transition: opacity 1s;/* criando efeito de transição na legenda */
+	}
+	
+	/* criando efeito de sobreposição quando o mouse passar por cima */
+	figure.foto-legenda:hover figcaption{
+		opacity: 1;
+	}
+	
+	/* Formatação do menu #=id/ ul=tudo que for lista não numerada */
+	nav#menu{/* fazendo com que meu navegador menu seja exibido como um bloco */
+		display: block;/* o bloco pode flutuar sobre a tela */
+	}
+	
+	nav#menu ul{
+		list-style: none;/* sumindo com os marcadores */
+		text-transform: uppercase;/* colocando todas as letras em maiuscula */
+		position: absolute;/* posição relativa ele fica preso dentro do container/posição absoluta ele fica livre pelo site */
+		top: -20px;
+		left: 450px;
+	}
+	/* mexendo na lista */
+	nav#menu li{
+		display: inline-block;/* fazendo com que um bloco seja exibido na msm linha */
+		background-color: #dddddd;/* colocando uma cor no fundo do menu */
+		padding: 10px;/* criando um espaco dentro dos botoes */
+		margin: 2px;/* criando um espaco fora dos botoes */
+		/*transition: background-color 1s; criando um efeito de transição nos botoes do menu */
+		-webkit-transition: background-color 1s;
+		-moz-transition: background-color 1s;
+		-o-transition: background-color 1s;
+		-ms-transition: background-color 1s;
+		transition: background-color 1s;
+	}
+	
+	/* mudando a cor dos botões do menu quando passar o mouse por cima */
+	nav#menu li:hover {
+			background-color: #606060;
+	}
+	
+	/* formatando menu principal */
+	nav#menu h1 {
+		display: none;/* escondendo menu principal */
+	}
+	
+	/* formatando os links */
+	nav#menu a {
+		color: #000000;/* mexendo na cor */
+		text-decoration: none;/* tirando o sublinhado */
+	}
+	
+	/* fazendo com que o link mude de cor quando estiver ativo sobre o mouse */
+	nav#menu a:hover {
+		color: #ffffff;
+	}
+	
+	/* Estilizando a primeira sessão */
+	section#corpo{
+		display: block;/* p/ ser exibido como um bloco */
+		width: 500px;
+		float: left;
+		border-right: 1px solid #606060;/* colocando uma borda dividindo as sessões */
+		padding-right: 15px;
+	}
+	
+	article#noticia-principal h2 {
+		font-size: 13pt;
+		color: #606060;
+		background-color: #dddddd;
+		padding: 5px 0px 5px 10px;
+		margin: 10px 0px 10px 0px;
+	}
+	
+	/* aplicando estilo no h1 */
+	header#cabecalho-artigo h1{
+		font-family: 'FonteLogo', sans-serif;
+		font-size: 20pt;
+		color: #606060;
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	
+	.direita{
+		text-align: right;
+	}
+	
+	/* aplicando estilo no h2 */
+	header#cabecalho-artigo h2{
+		font-size: 13pt;
+		color: #cecece;
+		background-color: #ffffff;
+		margin: 0px;
+	}
+	
+	/* aplicando estilo no h3 */
+	header#cabecalho-artigo h3{
+		font-size: 12px;
+		color: #606060;
+	}
+	
+	/* criando uma borda p/ tabela */
+	table#tabelaspec {
+		border: 1px solid #606060;
+		border-spacing: 0px;/* diminuindo espaços entre as cedulas da tabela */
+		margin-left: auto;
+		margin-right: auto;/* configurando as margens */
+	}
+	
+	table#tabelaspec td{
+		border: 1px solid #606060;/* criando bordas p/ cada cedula da tabela */
+		padding: 10px;
+		text-align: center;/* alinhando texto dentro das colunas */
+		vertical-align: middle;
+	}
+	
+	/* aplicando estilo na coluna da esquerda */
+	table#tabelaspec td.ce {
+		color: #ffffff;
+		background-color: #606060;
+		vertical-align: top;
+		font-weight: bold;
+	}
+	
+	/* aplicando estilo na coluna da direita */
+	table#tabelaspec td.cd {
+		background-color: #cecece;
+	}
+	
+	/* aplicando estilo no titulo da tabela */
+	table#tabelaspec caption{
+		color: #888888;
+		font-size: 13pt;
+		font-weight: bolder;
+	}
+	
+	table#tabelaspec caption span {
+		display: block;/* criando um bloco p/ fazer o texto flutuar dos demais */
+		float: right;
+		color: #000000;
+		font-size: 8pt;
+		margin-top: 10px;
+	}
+	
+	aside#lateral{/* segundo bloco */
+		display: block;
+		width: 350px;
+		float: right;
+		background-color: #dddddd;
+		padding: 10px;
+		margin-top: 10px;
+		box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+	}
+	
+	aside#lateral h1{
+		font-family: 'FonteLogo' , sans-serif;
+		font-size: 20pt;
+		color: #606060;
+		margin-top: 0px;
+	}
+	
+	aside#lateral h2{
+		background-color: #606060;
+		font-size: 13pt;
+		color: #ffffff;
+		padding: 5px;
+	}
+	
+	footer#rodape{
+		clear: both;/* ajustando rodape */
+		border-top: 1px solid #606060;
+	}
+	
+	footer#rodape p{
+		text-align: center;
+	}

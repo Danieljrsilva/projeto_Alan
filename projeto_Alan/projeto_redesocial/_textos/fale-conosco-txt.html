@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head><!-- funções comportamentais/cabecalho -->
+	<meta charset="UTF-8"/><!-- formatação do texto -->
+	<title>Tudo sobre Google Glass</title><!-- titulo -->
+	<!-- formatando todos os paragrafos de maneira global -->
+	<link rel="stylesheet"  href="_css/estilo.css"/><!-- gerando uma ligação entre o arquivo html e o css e usando href pra chmar um arquivo de fora -->
+</head>
+<!-- aplicando javascript -->
+<script language="javascript" src="_javascript/funcoes.js"></script>
+<body>
+	<div id="interface"><!-- dividindo a pagina  e usando id para identificar a pagina -->
+
+	<header id="cabecalho"><!-- area do cabecalho do site -->
+	<hgroup><!-- agrupando um titulos semelhantes -->
+	<h1>Google Glass</h1>
+	<h2>A revolução do Google está chegando</h2>
+	</hgroup><!-- grupo de titulos -->
+	
+	<img id="icone" src="_imagens/glass-oculos-preto-peq.png"/><!-- src é o parametro ou origem tag img= para inserir imagem-->
+	<nav id="menu"><!-- Criando area de navagação no site -->
+		<h1>Menu Principal</h1><!-- Titulo -->
+		<ul type= "disc"><!-- Lista não ordenada ou com demarcadores/ passando parametro em java script com "overmouseover" p/ quando passar o mouse por cima mudar a foto e onmouseout p/ quando tirar o mouse voltar a foto inicial -->
+			 <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html">Home</a></li><!-- criando links para os menus -->
+			 <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="specs.html">Especificações</a></li>
+			 <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fotos.html">Fotos</a></li>
+			 <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+			 <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+		</ul>
+	</nav><!-- Menu de navagação -->
+	</header>
+
+Fale Conosco > Contato
+Formulário de Contato
+por Gustavo Guanabara
+Atualizado em 01/Maio/2013
+
+Identificação do Usuário
+    Nome:
+    Senha:
+    E-mail:
+    Sexo:
+        - Masculino
+        - Feminino
+    Data de Nascimento:
+
+Endereço do Usuário
+    Logradouro:
+    Número:
+    Estado:
+    Cidade:
+
+Mensagem do Usuário
+    Grau de Urgência:
+    Mensagem:
+
+Quero um Google Glass
+    Gostaria de adquirir um Google Glass quando disponível
+    Cor:
+    Quantidade:
+    Preço Total: R$
+
+
+[BOTÃO ENVIAR]
+
+	<footer id="rodape"><!-- Dividindo a sessao de baixo -->
+		<p>Copyright &copy; 2020 - by Daniel Jose Rodrigues da Silva<br>
+		<a href="https://www.facebook.com/danielanderlinerodr/" target="_blank">Facebook</a> | <a href="https://instagram.com/daniel46_rodrigues?r=nametag" target="_blank">Instagram</a></p>
+	</footer>
+	</div>
+</body>
+</html>
